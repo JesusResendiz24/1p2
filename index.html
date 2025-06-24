@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguridad Social en México</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background: url('ley-seguro-social.jpg') no-repeat center center/cover;
+    }
+    .section {
+      scroll-margin-top: 80px;
+    }
+  </style>
+</head>
+<body class="font-['Roboto'] text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-green-700 text-white fixed top-0 w-full shadow z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="logo-imss.png" alt="IMSS Logo" class="h-10 w-auto">
+        <h1 class="text-2xl font-bold hover:text-yellow-300 transition">Seguridad Social en México</h1>
+      </div>
+      <div class="space-x-4 hidden md:flex">
+        <a href="#introduccion" class="hover:text-yellow-300">Inicio</a>
+        <a href="#estructura" class="hover:text-yellow-300">Estructura</a>
+        <a href="#seguros" class="hover:text-yellow-300">Seguros</a>
+        <a href="#guia" class="hover:text-yellow-300">Guía PDF</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero h-screen flex items-center justify-center text-white text-center px-6">
+    <div class="bg-black bg-opacity-60 p-10 rounded-xl">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4 animate-pulse">Bienvenido al Marco Legal de la Seguridad Social</h2>
+      <p class="text-lg md:text-xl">Conoce tu derecho a la salud, bienestar y justicia social</p>
+    </div>
+  </header>
+
+  <!-- Secciones -->
+  <main class="max-w-4xl mx-auto px-4 space-y-16 mt-10">
+
+    <!-- Introducción -->
+    <section id="introduccion" class="section">
+      <h3 class="text-3xl font-bold border-b-4 border-green-600 mb-4">Introducción</h3>
+      <p>La seguridad social en México es un derecho garantizado por la Constitución y un pilar fundamental del Estado para asegurar el bienestar colectivo. A través del IMSS, el Estado provee atención médica, prestaciones sociales, pensiones y apoyo en momentos críticos como enfermedad o vejez.</p>
+    </section>
+
+    <!-- Estructura -->
+    <section id="estructura" class="section">
+      <h3 class="text-3xl font-bold border-b-4 border-green-600 mb-4">Estructura del Sistema</h3>
+      <ul class="list-disc list-inside space-y-2">
+        <li><strong>Artículo 2 de la LSS:</strong> Finalidad: bienestar integral.</li>
+        <li><strong>Art. 4 y 5 LSS:</strong> El IMSS es un organismo público descentralizado.</li>
+        <li><strong>Art. 6:</strong> Distingue entre régimen obligatorio y voluntario.</li>
+        <li><strong>Art. 12 y 13:</strong> Sujetos obligatorios y voluntarios.</li>
+      </ul>
+      <p class="mt-4">Este sistema se basa en la solidaridad, donde los trabajadores y patrones contribuyen para protegerse mutuamente ante riesgos.</p>
+    </section>
+
+    <!-- Seguros -->
+    <section id="seguros" class="section">
+      <h3 class="text-3xl font-bold border-b-4 border-green-600 mb-4">Seguros Comprendidos</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-green-100 p-4 rounded-xl shadow">
+          <h4 class="font-bold text-lg mb-2">1. Riesgos de Trabajo</h4>
+          <p>Protección ante accidentes o enfermedades derivadas del empleo.</p>
+        </div>
+        <div class="bg-green-100 p-4 rounded-xl shadow">
+          <h4 class="font-bold text-lg mb-2">2. Enfermedades y Maternidad</h4>
+          <p>Atención médica, hospitalaria y subsidios.</p>
+        </div>
+        <div class="bg-green-100 p-4 rounded-xl shadow">
+          <h4 class="font-bold text-lg mb-2">3. Invalidez y Vida</h4>
+          <p>Apoyo en caso de incapacidad permanente o fallecimiento.</p>
+        </div>
+        <div class="bg-green-100 p-4 rounded-xl shadow">
+          <h4 class="font-bold text-lg mb-2">4. Retiro, Cesantía y Vejez</h4>
+          <p>Pensiones al final de la vida laboral activa.</p>
+        </div>
+        <div class="bg-green-100 p-4 rounded-xl shadow">
+          <h4 class="font-bold text-lg mb-2">5. Guarderías y Prestaciones Sociales</h4>
+          <p>Apoyo integral a trabajadores con hijos y actividades recreativas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guía en PDF -->
+    <section id="guia" class="section text-center">
+      <h3 class="text-3xl font-bold border-b-4 border-green-600 mb-4">Guía de Estudio</h3>
+      <p class="mb-6">Descarga el documento completo con preguntas clave para repasar los temas legales y sociales vistos en clase.</p>
+      <a href="guia-estudio.pdf" download class="inline-block bg-green-700 text-white px-6 py-3 rounded-xl hover:bg-green-800 transition shadow-lg">
+        📘 Descargar Guía de Estudio
+      </a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-16 py-6 bg-gray-100 text-center text-sm text-gray-500">
+    Hecho con ❤️ por Jesús Reséndiz - 2025 | Basado en la Ley del Seguro Social
+  </footer>
+
+  <!-- Interactividad con Tippy.js -->
+  <script>
+    tippy('li', {
+      content: 'Haz clic o pasa el cursor para saber más',
+      animation: 'scale',
+      theme: 'light',
+    });
+  </script>
+</body>
+</html>
